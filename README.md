@@ -359,3 +359,14 @@ These features are intentionally not implemented because they are outside the sc
 
 The assignment does not require authentication, users, RBAC, caching, Redis, GraphQL Federation, or deployment infrastructure. They are intentionally excluded so the implementation remains focused, understandable, and appropriate for a small internship take-home assignment.
 
+
+## Final Verification
+
+The implementation was verified locally with:
+
+``bash
+bun run typecheck
+bun test
+bun run sanity
+``n
+The test suite includes resolver unit tests and a PostgreSQL integration test using the Docker Compose database.
